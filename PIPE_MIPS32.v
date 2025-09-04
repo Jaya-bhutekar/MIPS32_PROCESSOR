@@ -1,14 +1,13 @@
 `timescale 1ns / 1ps
 //////////////////////////////////////////////////////////////////////////////////
 // Simple 5-stage pipelined MIPS-like processor (keeps your clk1/clk2 scheme)
-// Cleaned and corrected version of your posted code.
 //////////////////////////////////////////////////////////////////////////////////
 module pipe_MIPS32(
     input clk1,
     input clk2
 );
 
-// ---------------------- Program / pipeline registers ------------------------
+// ---------------------- Program/pipeline registers ------------------------
 reg [31:0] PC;
 reg [31:0] IF_ID_IR, IF_ID_NPC;
 
